@@ -1,0 +1,122 @@
+@media screen and (max-width: 1200px) {
+	
+	
+	.row {
+		margin: 0 1.5rem;
+	}
+
+
+	.hero-text {
+		width: 90%;
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+	
+	.mobile-menu span {
+		display: block;
+	}
+
+	.main-nav {
+		display: none;
+	}
+
+	.client-photo {
+		float: none;
+		margin-right: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.client-review {
+		width: 80%;
+		margin: 0 auto;
+		float: none;
+		text-align: center;
+	}
+
+	.contact-section form {
+		width: 100%;
+		margin-left: 0;
+	}
+
+}
+
+@media screen and (max-width: 980px) {
+	
+	.span_1_of_4 {
+		width: 49.2%;
+	}
+
+	.span_1_of_4:nth-child(3){
+		margin-left: 0;
+	}
+
+	.box p {
+		width: 66%;
+		margin: 1rem auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.little-description {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size:  2rem;
+	}
+
+	h4 {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	
+	header {
+		height: 85vh;
+	}
+	
+	.span_1_of_4 {
+		width: 100%;
+	}
+
+
+	.footer-section {
+		font-size: 1.8rem;
+	}
+
+	.footer-section ul li {
+	   margin: 0 1rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+	}
+
+	.testimonial-section .col:nth-child(3),
+	.testimonial-section .col:nth-child(4) {
+		margin-top: 4rem;
+	}
+
+	.portfolio-filter button {
+		width: 6rem;
+		padding: .5rem;
+		font-size: 1.6rem;
+	}
+}
