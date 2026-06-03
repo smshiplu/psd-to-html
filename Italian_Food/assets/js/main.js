@@ -218,10 +218,11 @@ function countScroll() {
     });
 
     const tagCloudLink = document.getElementsByClassName('tag-cloud-link');
-    console.log(tagCloudLink);
-    for( let i = 0; i <  tagCloudLink.length; i++ ){
-        tagCloudLink[i].style.fontSize = null;
-        //tagCloudLink[i].removeAttribute('style');
+    // console.log(tagCloudLink);
+    if (tagCloudLinks.length > 0) {
+        for (let i = 0; i < tagCloudLinks.length; i++) {
+            tagCloudLinks[i].style.fontSize = ''; // Use empty string to remove inline style
+        }
     }
 
 }) (jQuery);
