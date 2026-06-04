@@ -177,8 +177,7 @@ const logo = document.getElementsByClassName('logo')[0];
 const stickyContent = document.getElementsByClassName('sticky-content')[0];
 const logoPosition = logo.offsetTop;
 
-window.onscroll = function(){
-    
+window.onscroll = function() {
     countScroll();
 }
 
@@ -195,27 +194,27 @@ function countScroll() {
 
 
 /*******************************************
-* Initiate owl carousel
+* Initiate owl carousel 
 ********************************************/
-    $('.owl-carousel').owlCarousel({
-        stagePadding: 0,
-        items: 1,
-        loop: true,
-        autoPlay: true,
-        margin: 20,
-        singleItem: true,
-        nav: true,
-        navText: [
+    // $('.owl-carousel').owlCarousel({
+    //     stagePadding: 0,
+    //     items: 1,
+    //     loop: true,
+    //     autoPlay: true,
+    //     margin: 20,
+    //     singleItem: true,
+    //     nav: true,
+    //     navText: [
             
-            "&#8592;",
-            "&#8594;",
-            //"&#11164;",
-            //"&#11166;",
-            //"<i class='fa fa-caret-left'></i>",
-            //"<i class='fa fa-caret-right'></i>"
-        ],
-        dots: true,
-    });
+    //         "&#8592;",
+    //         "&#8594;",
+    //         //"&#11164;",
+    //         //"&#11166;",
+    //         //"<i class='fa fa-caret-left'></i>",
+    //         //"<i class='fa fa-caret-right'></i>"
+    //     ],
+    //     dots: true,
+    // });
 
     const tagCloudLink = document.getElementsByClassName('tag-cloud-link');
     // console.log(tagCloudLink);

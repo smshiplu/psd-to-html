@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /************************
 * BASIC SETUP *
 *************************/
@@ -19,8 +21,8 @@ $color_8: rgba(255, 255, 255, 0.5);
 $color_9: #949494;
 $color_10: #777777;
 $font-family_1: 'Open Sans', sans;
-$font-family_2: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font-family_3: Hijrnotes;
+$font-family_2: "Fira Code", Consolas, monospace;
+$font-family_3: "Bonheur Royale", cursive;
 $font-family_4: Montserrat, sans-serif;
 $font-family_5: sans-serif;
 $font-family_6: 'Open Sans', Sans;
@@ -550,7 +552,7 @@ header {
 				font-family: $font-family_3;
 				font-size: 8rem;
 				color: $color_5;
-				font-weight: bold;
+				font-weight: 400;
 				text-transform: capitalize;
 			}
 			a {
@@ -2787,6 +2789,120 @@ header#all-page-header {
 	}
 }
 
+.contact-page {
+    .contact-grid {
+        display: flex;
+        gap: 4rem;
+        align-items: stretch;
+        justify-content: space-between;
+        margin-top: 5rem;
+        flex-wrap: wrap;
+    }
+    .contact-panel,
+    .contact-form {
+        flex: 1 1 44%;
+        min-width: 30rem;
+        background-color: $background-color_10;
+        padding: 4rem;
+        border-radius: 2rem;
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.15);
+    }
+    .contact-panel {
+        background-image: url("../img/pasta-1920x1281.jpg");
+        background-size: cover;
+        background-position: center;
+        color: $color_1;
+        position: relative;
+        overflow: hidden;
+        &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 1;
+        }
+        h2,
+        p,
+        .contact-details {
+            position: relative;
+            z-index: 2;
+        }
+        h2 {
+            font-family: $font-family_4;
+            font-size: 4.5rem;
+            margin-bottom: 3rem;
+            color: $color_3;
+        }
+        p {
+            color: $color_3;
+            margin-bottom: 3rem;
+        }
+        .contact-details {
+            display: grid;
+            gap: 2rem;
+            strong {
+                display: block;
+                font-weight: 700;
+                margin-bottom: .8rem;
+                color: $color_3;
+            }
+            p {
+                color: $color_6;
+                line-height: 2.3rem;
+                margin: 0;
+            }
+        }
+    }
+    .contact-form {
+        background-color: $background-color_7;
+        .form-field {
+            margin-bottom: 2rem;
+            label {
+                display: block;
+                margin-bottom: .8rem;
+                font-weight: 700;
+                font-size: 1.6rem;
+                color: $color_1;
+            }
+            input,
+            textarea {
+                width: 100%;
+                border: .1rem solid $background-color_8;
+                border-radius: 1rem;
+                padding: 1.5rem 1.8rem;
+                font-size: 1.6rem;
+                background-color: $background-color_5;
+                color: $color_1;
+                resize: vertical;
+            }
+            textarea {
+                min-height: 18rem;
+            }
+        }
+        button.btn-dark {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            padding: 1.5rem 2rem;
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+        }
+    }
+    @media (max-width: 86rem) {
+        .contact-grid {
+            gap: 2rem;
+        }
+    }
+    @media (max-width: 64rem) {
+        .contact-grid,
+        .contact-panel,
+        .contact-form {
+            flex: 1 1 100%;
+            min-width: auto;
+        }
+    }
+}
+
 /************************
 * FOOTER *
 *************************/
@@ -2820,6 +2936,10 @@ footer#site-footer {
 		font-size: 2.2rem;
 		font-weight: normal;
 		margin-bottom: 2rem;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+		&:first-of-type {
+			text-shadow: none;
+		}
 	}
 	.social-links {
 		ul {
@@ -2873,6 +2993,7 @@ footer#site-footer {
 				&:link {
 					color: $color_5;
 				}
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 			}
 		}
 	}
